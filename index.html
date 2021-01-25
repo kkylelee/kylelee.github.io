@@ -83,17 +83,31 @@ li a:hover {
   background-color: #111;
 }
 	
-.dropbtn {
-  background-color: #4CAF50;
-  color: white;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
 }
 
-.dropdown {
-  position: relative;
+li {
+  float: left;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+li.dropdown {
   display: inline-block;
 }
 
@@ -111,18 +125,14 @@ li a:hover {
   padding: 12px 16px;
   text-decoration: none;
   display: block;
+  text-align: left;
 }
 
-.dropdown-content a:hover {background-color: #f1f1f1}
+.dropdown-content a:hover {background-color: #f1f1f1;}
 
 .dropdown:hover .dropdown-content {
   display: block;
 }
-
-.dropdown:hover .dropbtn {
-  background-color: #3e8e41;
-}
-
 
 	  </style>
 	  
@@ -130,13 +140,14 @@ li a:hover {
 	 <ul class="items-left nt2">
 	  <li><a class="link" href="https://kyleklee1.github.io/k/aboutme/">About Me</a></li>
           <li>
-  <div class="dropdown">
-  <button class="dropbtn">Academic Papers</button>
-  <div class="dropdown-content">
-  <a href="https://kyleklee1.github.io/k/academicpapers/">Link 1</a>
-  <a href="#">Link 2</a>
-  </div>
-</div>
+ <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Academic Papers</a>
+    <div class="dropdown-content">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  </li>
 	  </li>
           <li><a class="link" href="https://kyleklee1.github.io/k/problems/">Problem Collection</a></li>
           <li><a class="link" href="https://notability.com/n/download/pdf/0eL4yfWP47ut1uGe6V~CUf/CMU_Resume.pdf?u=1611474251188">Resume (pdf)</a></li>
