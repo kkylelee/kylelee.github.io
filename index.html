@@ -45,7 +45,7 @@ if (!doNotTrack) {
 
 <style>
 body {
-	background-image: url('https://drive.google.com/uc?export=view&id=1j3ULT8p_cHQbhVDVdMbh4OP9PVQ4DIMw');
+	background-image: url('');
 	background-repeat: no-repeat;
 	background-size: fixed;
 	background-size: 100% 100%;
@@ -82,6 +82,46 @@ li a {
 li a:hover {
   background-color: #111;
 }
+	
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
 
 
 	  </style>
@@ -89,7 +129,14 @@ li a:hover {
 	<div class="header">
 	 <ul class="items-left nt2">
 	  <li><a class="link" href="https://kyleklee1.github.io/k/aboutme/">About Me</a></li>
-          <li><a class="link" href="https://kyleklee1.github.io/k/academicpapers/">Academic Papers</a></li>
+          <li>
+  <div class="dropdown">
+  <button class="dropbtn">Academic Papers</button>
+  <div class="dropdown-content">
+  <a href="https://kyleklee1.github.io/k/academicpapers/">Link 1</a>
+  <a href="#">Link 2</a>
+  </div>
+	  </li>
           <li><a class="link" href="https://kyleklee1.github.io/k/problems/">Problem Collection</a></li>
           <li><a class="link" href="https://notability.com/n/download/pdf/0eL4yfWP47ut1uGe6V~CUf/CMU_Resume.pdf?u=1611474251188">Resume (pdf)</a></li>
 	</ul>
